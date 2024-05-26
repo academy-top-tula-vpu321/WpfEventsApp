@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfEventsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfEventsApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<StackPanel>
+        <TextBlock FontSize="28" x:Name="txtTablo" />
+        <Border x:Name="Aqua"
+                Background="Aqua"
+                Margin="40"
+                BorderBrush="Red"
+                BorderThickness="20"
+                MouseDown="Green_MouseDown"
+                MouseMove="Aqua_MouseMove">
+            -->
+    <!--PreviewMouseDown="Button_PreviewMouseDown"-->
+    <!--
+            <Border x:Name="Yellow"
+                    Background="Yellow"
+                    Margin="40"
+                    MouseDown="Green_MouseDown">
+                -->
+    <!--PreviewMouseDown="Button_PreviewMouseDown"-->
+    <!--PreviewMouseDown="Button_PreviewMouseDown"--><!--
+
+            </Border>
+        </Border>
+    </StackPanel>-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtSource"
+                 FontSize="28"
+                 MouseDown="txtSource_MouseDown"/>
+        <Button x:Name="btnDest"
+                Grid.Column="1"
+                FontSize="28"
+                Height="100"
+                AllowDrop="True"
+                Drop="Button_Drop"/>
+    </Grid>
+</Window>
